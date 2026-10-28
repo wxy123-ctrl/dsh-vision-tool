@@ -1,8 +1,18 @@
 {
   "name": "dsh-vision-tool",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "description": "DSH 视觉问答：提供 recognize_images 工具，把会话中的图片转发给用户选定的视觉模型识别，并附带模型选择设置页。",
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "selftest.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "eye-preview.svg"
+  ],
   "license": "MIT",
   "author": "wxy123-ctrl",
   "repository": {

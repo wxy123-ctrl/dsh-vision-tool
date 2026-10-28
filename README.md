@@ -82,6 +82,7 @@
 | `eye-preview.svg` | 眼睛图标放大预览（双击浏览器打开） |
 | `cordis.patch.yml` | bundle 补丁：`insert` 行 `{id: vision-tool, name: dsh-vision-tool}` |
 | `locale/zh.json` `locale/en.json` | 插件页（设置 → 内置插件）卡片的中英文标题与描述（`meta.title` / `meta.description`） |
+| `icon.svg` | 插件页卡片图标（package.json 顶层 `icon` 字段声明） |
 
 ## 安装（官方 bundle 安装）
 
