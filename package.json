@@ -1,6 +1,6 @@
 {
   "name": "dsh-vision-tool",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "DSH 视觉问答：提供 recognize_images 工具，把会话中的图片转发给用户选定的视觉模型识别，并附带模型选择设置页。",
   "license": "MIT",
@@ -25,7 +25,8 @@
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.3"

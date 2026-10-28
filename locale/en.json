@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Vision Tool",
+    "description": "Vision Q&A for DSH: a recognize_images tool that forwards images from the conversation to a user-selected vision model, plus a settings page for picking that model."
+  }
+}
