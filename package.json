@@ -1,0 +1,45 @@
+{
+  "name": "dsh-vision-tool",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "DSH 视觉问答：提供 recognize_images 工具，把会话中的图片转发给用户选定的视觉模型识别，并附带模型选择设置页。",
+  "license": "MIT",
+  "author": "wxy123-ctrl",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxy123-ctrl/dsh-vision-tool.git"
+  },
+  "homepage": "https://github.com/wxy123-ctrl/dsh-vision-tool#readme",
+  "bugs": "https://github.com/wxy123-ctrl/dsh-vision-tool/issues",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "vision",
+    "image-recognition",
+    "multimodal"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  }
+}
